@@ -17,7 +17,7 @@ class BitrixCaptcha
     /**
      * Подключаем JS скрипты для reCaptcha v3
      */
-    public function initJS()
+    static public function initJS()
     {
         $Asset = Asset::getInstance();
         $siteKey = Option::get(M::id(), 'site_key_'. SITE_ID);
@@ -36,7 +36,7 @@ class BitrixCaptcha
     /**
      * Подключаем проверку на спам
      */
-    public function initCheckSpam()
+    static public function initCheckSpam()
     {
         $secretKey = Option::get(M::id(), 'secret_key_'. SITE_ID);
         if (empty($secretKey)) return true;
@@ -53,7 +53,7 @@ class BitrixCaptcha
     /**
      * Проверка форм из модуля веб форм
      */
-    public function checkWebForm($WEB_FORM_ID, &$arFields, &$arValues)
+    static public function checkWebForm($WEB_FORM_ID, &$arFields, &$arValues)
     {
         if ($arFields['RECAPTCHA_DISABLE']) return true;
 
@@ -70,7 +70,7 @@ class BitrixCaptcha
     /**
      * Проверка при регистрации пользователя
      */
-    public function checkRegistration(&$arArgs)
+    static public function checkRegistration(&$arArgs)
     {
         $registrationEnable = Option::get(M::id(), 'registration_enable_'. SITE_ID, 'N');
         if ($registrationEnable == 'N') return true;
@@ -94,7 +94,7 @@ class BitrixCaptcha
     /**
      * Проверка при отправки формы обратной связи main.feedback
      */
-    public function checkFeedback(&$event, &$lid, &$arFields, &$messageId, &$files, &$languageId)
+    static public function checkFeedback(&$event, &$lid, &$arFields, &$messageId, &$files, &$languageId)
     {
         if ($arFields['RECAPTCHA_DISABLE']) return true;
 
@@ -111,7 +111,7 @@ class BitrixCaptcha
     /**
      * Проверка при добавлении в инфоблок
      */
-    public function checkIBlock(&$arParams)
+    static public function checkIBlock(&$arParams)
     {
         if ($arParams['RECAPTCHA_DISABLE']) return true;
 
@@ -128,7 +128,7 @@ class BitrixCaptcha
     /**
      * Основной метод проверки капчи
      */
-    public function checkSpam()
+    static public function checkSpam()
     {
         global $APPLICATION;
 
