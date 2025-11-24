@@ -158,7 +158,7 @@ class BitrixCaptcha
             $errorMessage = Option::get(M::id(), 'error_message_'. SITE_ID);
             if (empty($errorMessage)) $errorMessage = Loc::getMessage(M::locPrefix() .'CAPTCHA_ERROR_MESSAGE');
 
-            $APPLICATION->ThrowException($errorMessage);
+            $APPLICATION->ThrowException($errorMessage, 'recaptcha');
             return false;
         }
     }
