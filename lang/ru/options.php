@@ -2,23 +2,23 @@
 
 use B01110011ReCaptcha\Module as M;
 
-$MESS[M::locPrefix() .'HEADER_BASE_SETTINGS'] = 'Основные настройки';
-$MESS[M::locPrefix() .'HEADER_REGISTRATION'] = 'Регистрация';
-$MESS[M::locPrefix() .'HEADER_WEBFORM_IDS'] = 'Веб Формы';
-$MESS[M::locPrefix() .'HEADER_IBLOCK'] = 'Инфоблоки';
-$MESS[M::locPrefix() .'HEADER_MAIN_FEEDBACK'] = 'Форма обратной связи (main.feedback)';
-$MESS[M::locPrefix() .'HEADER_SALE_ORDER'] = 'Оформление заказа (sale.order.ajax)';
+$MESS[M::locPrefix() .'HEADER_BASE_SETTINGS'] = 'РћСЃРЅРѕРІРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё';
+$MESS[M::locPrefix() .'HEADER_REGISTRATION'] = 'Р РµРіРёСЃС‚СЂР°С†РёСЏ';
+$MESS[M::locPrefix() .'HEADER_WEBFORM_IDS'] = 'Р’РµР± Р¤РѕСЂРјС‹';
+$MESS[M::locPrefix() .'HEADER_IBLOCK'] = 'РРЅС„РѕР±Р»РѕРєРё';
+$MESS[M::locPrefix() .'HEADER_MAIN_FEEDBACK'] = 'Р¤РѕСЂРјР° РѕР±СЂР°С‚РЅРѕР№ СЃРІСЏР·Рё (main.feedback)';
+$MESS[M::locPrefix() .'HEADER_SALE_ORDER'] = 'РћС„РѕСЂРјР»РµРЅРёРµ Р·Р°РєР°Р·Р° (sale.order.ajax)';
 
-$MESS[M::locPrefix() .'NOTE_MAIN_FEEDBACK'] = 'Сообщение об ошибке капчи в этом компоненте не выводится, связано это с устройством компонента. Если кастомизировать компонент, то ошибка капчи появится. Инструкция на странице "Установки" модуля.';
-$MESS[M::locPrefix() .'NOTE_SALE_ORDER'] = 'Событие OnBeforeOrderAdd (которое тут используется) устарело с версии 15.5.0, но в продукте сохранена обратная совместимость. Поэтому его можно использовать, если в настройках модуля Интернет-магазин отмечена опция Включить обработку устаревших событий.';
+$MESS[M::locPrefix() .'NOTE_MAIN_FEEDBACK'] = 'РЎРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ РєР°РїС‡Рё РІ СЌС‚РѕРј РєРѕРјРїРѕРЅРµРЅС‚Рµ РЅРµ РІС‹РІРѕРґРёС‚СЃСЏ, СЃРІСЏР·Р°РЅРѕ СЌС‚Рѕ СЃ СѓСЃС‚СЂРѕР№СЃС‚РІРѕРј РєРѕРјРїРѕРЅРµРЅС‚Р°. Р•СЃР»Рё РєР°СЃС‚РѕРјРёР·РёСЂРѕРІР°С‚СЊ РєРѕРјРїРѕРЅРµРЅС‚, С‚Рѕ РѕС€РёР±РєР° РєР°РїС‡Рё РїРѕСЏРІРёС‚СЃСЏ. РРЅСЃС‚СЂСѓРєС†РёСЏ РЅР° СЃС‚СЂР°РЅРёС†Рµ "РЈСЃС‚Р°РЅРѕРІРєРё" РјРѕРґСѓР»СЏ.';
+$MESS[M::locPrefix() .'NOTE_SALE_ORDER'] = 'РЎРѕР±С‹С‚РёРµ OnBeforeOrderAdd (РєРѕС‚РѕСЂРѕРµ С‚СѓС‚ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ) СѓСЃС‚Р°СЂРµР»Рѕ СЃ РІРµСЂСЃРёРё 15.5.0, РЅРѕ РІ РїСЂРѕРґСѓРєС‚Рµ СЃРѕС…СЂР°РЅРµРЅР° РѕР±СЂР°С‚РЅР°СЏ СЃРѕРІРјРµСЃС‚РёРјРѕСЃС‚СЊ. РџРѕСЌС‚РѕРјСѓ РµРіРѕ РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ, РµСЃР»Рё РІ РЅР°СЃС‚СЂРѕР№РєР°С… РјРѕРґСѓР»СЏ РРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ РѕС‚РјРµС‡РµРЅР° РѕРїС†РёСЏ Р’РєР»СЋС‡РёС‚СЊ РѕР±СЂР°Р±РѕС‚РєСѓ СѓСЃС‚Р°СЂРµРІС€РёС… СЃРѕР±С‹С‚РёР№.';
 
-$MESS[M::locPrefix() .'FIELD_SITE_KEY'] = 'Ключ сайта';
-$MESS[M::locPrefix() .'FIELD_SECRET_KEY'] = 'Секретный ключ';
-$MESS[M::locPrefix() .'FIELD_PERMISSIBLE_SCORE'] = 'Допустимая оценка';
-$MESS[M::locPrefix() .'FIELD_HIDE_BADGE'] = 'Скрыть значок';
-$MESS[M::locPrefix() .'FIELD_WEBFORM_IDS'] = 'ID веб формы';
-$MESS[M::locPrefix() .'FIELD_REGISTRATION'] = 'Включить капчу';
-$MESS[M::locPrefix() .'FIELD_ERROR_MESSAGE'] = 'Сообщение об ошибке капчи';
-$MESS[M::locPrefix() .'FIELD_IBLOCK_IDS'] = 'ID инфоблока';
-$MESS[M::locPrefix() .'FIELD_MAIN_FEEDBACK_IDS'] = 'ID почтовых шаблонов';
-$MESS[M::locPrefix() .'FIELD_SALE_ORDER'] = 'Включить капчу';
+$MESS[M::locPrefix() .'FIELD_SITE_KEY'] = 'РљР»СЋС‡ СЃР°Р№С‚Р°';
+$MESS[M::locPrefix() .'FIELD_SECRET_KEY'] = 'РЎРµРєСЂРµС‚РЅС‹Р№ РєР»СЋС‡';
+$MESS[M::locPrefix() .'FIELD_PERMISSIBLE_SCORE'] = 'Р”РѕРїСѓСЃС‚РёРјР°СЏ РѕС†РµРЅРєР°';
+$MESS[M::locPrefix() .'FIELD_HIDE_BADGE'] = 'РЎРєСЂС‹С‚СЊ Р·РЅР°С‡РѕРє';
+$MESS[M::locPrefix() .'FIELD_WEBFORM_IDS'] = 'ID РІРµР± С„РѕСЂРјС‹';
+$MESS[M::locPrefix() .'FIELD_REGISTRATION'] = 'Р’РєР»СЋС‡РёС‚СЊ РєР°РїС‡Сѓ';
+$MESS[M::locPrefix() .'FIELD_ERROR_MESSAGE'] = 'РЎРѕРѕР±С‰РµРЅРёРµ РѕР± РѕС€РёР±РєРµ РєР°РїС‡Рё';
+$MESS[M::locPrefix() .'FIELD_IBLOCK_IDS'] = 'ID РёРЅС„РѕР±Р»РѕРєР°';
+$MESS[M::locPrefix() .'FIELD_MAIN_FEEDBACK_IDS'] = 'ID РїРѕС‡С‚РѕРІС‹С… С€Р°Р±Р»РѕРЅРѕРІ';
+$MESS[M::locPrefix() .'FIELD_SALE_ORDER'] = 'Р’РєР»СЋС‡РёС‚СЊ РєР°РїС‡Сѓ';
