@@ -44,7 +44,7 @@ class BitrixCaptcha
         $EventManager = EventManager::getInstance();
 
         $EventManager->addEventHandler('form', 'onBeforeResultAdd', ['B01110011ReCaptcha\BitrixCaptcha', 'checkWebForm']);
-        $EventManager->addEventHandler('main', 'OnBeforeUserRegister', ['B01110011ReCaptcha\BitrixCaptcha', 'checkRegistration']);
+        $EventManager->addEventHandler('main', 'OnAfterUserRegister', ['B01110011ReCaptcha\BitrixCaptcha', 'checkRegistration']);
         $EventManager->addEventHandler('main', 'OnBeforeEventAdd', ['B01110011ReCaptcha\BitrixCaptcha', 'checkFeedback']);
         $EventManager->addEventHandler('iblock', 'OnBeforeIBlockElementAdd', ['B01110011ReCaptcha\BitrixCaptcha', 'checkIBlock']);
         $EventManager->addEventHandler('sale', 'OnBeforeOrderAdd', ['B01110011ReCaptcha\BitrixCaptcha', 'checkSaleOrder']);
