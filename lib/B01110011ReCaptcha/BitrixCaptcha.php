@@ -81,7 +81,7 @@ class BitrixCaptcha
     /**
      * Проверка при оформлении заказа
      */
-    public function checkSaleOrder(&$arFields)
+    static public function checkSaleOrder(&$arFields)
     {
         if ($arFields['RECAPTCHA_DISABLE']) return true;
 
